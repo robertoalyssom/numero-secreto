@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+
+:root {
+    --font-family: 'IBM Plex Sans', sans-serif;
+    --bg-color: #453C67;
+    --primary-color: #46C2CB;
+    --second-color: #00D7FF;
+    --black: #000000;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh; /*-- tela inteira */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+
+.container-jogo {
+    display: none;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 3em;
+    margin-top: .8em;
+}
+
+.mensagem {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+}
+
+.box {
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-size: 4em;
+    padding: .6rem;
+    margin: 1rem;
+}
+
+.btn-jogar {
+    padding: .5em .9em;
+    border: 0;
+    background: var(--primary-color);
+    color: var(--black);
+    border-radius: 5px;
+    margin-top: 3em;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 1em;
+    transition: .5s;
+}
+
+.btn-jogar:hover {
+    background: var(--second-color);
+    transform: scale(1.08, 1.08);
+    cursor: pointer;
+}
+
+.btn-jogar:active {
+    background: var(--bg-color);
+    border: 1px solid var(--primary-color);
+}
